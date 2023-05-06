@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/notification_service";
+
+message GetUserNotificationOne {
+    string notification_id = 1;
+    string user_id = 2;
+}
+
+message GetUserNotificationAll {
+    string user_id = 1;
+}
+

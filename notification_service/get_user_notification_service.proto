@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/notification_service";
+
+import "get_user_notification.proto";
+import "google/protobuf/empty.proto";
+
+service GetUserNotificationService {
+    rpc GetOne(GetUserNotificationOne) returns (google.protobuf.Empty) {}
+    rpc GetAll(GetUserNotificationAll) returns (google.protobuf.Empty) {}
+    
+}
