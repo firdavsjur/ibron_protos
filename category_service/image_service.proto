@@ -4,10 +4,10 @@ package genproto;
 
 option go_package="genproto/category_service";
 
-import "category.proto";
+import "image.proto";
 import "google/protobuf/empty.proto";
 
-service ShipperService {
+service ImageService {
     rpc Create(CreateImage) returns (ImagePrimaryKey) {}
     rpc GetAll(GetAllImageRequest) returns (GetAllImageResponse) {}
     rpc Get(ImagePrimaryKey) returns (Image) {}

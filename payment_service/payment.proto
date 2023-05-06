@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package genproto;
-option go_package="genproto/notification_service";
+option go_package="genproto/payment_service";
 
 
 message CreatePayment {

@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 package genproto;
-option go_package="genproto/notification_service";
+option go_package="genproto/order_service";
 
 message CreateOrder {
     string title = 2;

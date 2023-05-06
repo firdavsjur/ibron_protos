@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/category_service";
+
+import "location.proto";
+import "google/protobuf/empty.proto";
+
+service LocationService {
+    rpc Create(CreateLocation) returns (LocationPrimaryKey) {}
+    rpc GetAll(GetAllLocationRequest) returns (GetAllLocationResponse) {}
+    rpc Get(LocationPrimaryKey) returns (Location) {}
+    rpc Update(UpdateLocation) returns (google.protobuf.Empty) {}
+    rpc Delete(LocationPrimaryKey) returns (google.protobuf.Empty) {}
+    
+}

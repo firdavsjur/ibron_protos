@@ -7,7 +7,7 @@ option go_package="genproto/category_service";
 import "category.proto";
 import "google/protobuf/empty.proto";
 
-service ShipperService {
+service CategoryService {
     rpc Create(CreateCategory) returns (CategoryPrimaryKey) {}
     rpc GetAll(GetAllCategoryRequest) returns (GetAllCategoryResponse) {}
     rpc Get(CategoryPrimaryKey) returns (Category) {}

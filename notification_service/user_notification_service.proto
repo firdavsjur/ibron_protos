@@ -4,7 +4,7 @@ package genproto;
 
 option go_package="genproto/user_service";
 
-import "notification.proto";
+import "user_notification.proto";
 import "google/protobuf/empty.proto";
 
 service ShipperService {
