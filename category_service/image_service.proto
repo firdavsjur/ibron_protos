@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/category_service";
+
+import "category.proto";
+import "google/protobuf/empty.proto";
+
+service ShipperService {
+    rpc Create(CreateImage) returns (ImagePrimaryKey) {}
+    rpc GetAll(GetAllImageRequest) returns (GetAllImageResponse) {}
+    rpc Get(ImagePrimaryKey) returns (Image) {}
+    rpc Update(UpdateImage) returns (google.protobuf.Empty) {}
+    rpc Delete(ImagePrimaryKey) returns (google.protobuf.Empty) {}
+    
+}

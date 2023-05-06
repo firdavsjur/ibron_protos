@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/user_service";
+
+import "notification.proto";
+import "google/protobuf/empty.proto";
+
+service ShipperService {
+    rpc Create(CreateUserNotification) returns (UserNotificationPrimaryKey) {}
+    rpc GetAll(GetAllUserNotificationRequest) returns (GetAllUserNotificationResponse) {}
+    rpc Get(UserNotificationPrimaryKey) returns (UserNotification) {}
+    rpc Delete(UserNotificationPrimaryKey) returns (google.protobuf.Empty) {}
+    
+}

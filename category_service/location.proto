@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/category_service";
+
+
+message CreateLocation {
+    string stadiumId = 1;
+    string long = 2;
+    string lat = 3;
+}
+
+message Location {
+    string id = 1;
+    string stadiumId = 2;
+    string long = 3;
+    string lat = 4;
+   string created_at = 5;
+   string updated_at = 6;
+   string deleted_at = 7;
+}
+
+
+message UpdateLocation{
+    string id = 1;
+    string stadiumId = 2;
+    string long = 3;
+    string lat = 4;
+}
+
+message LocationPrimaryKey{
+    string id = 1;
+}
+message GetAllLocationRequest{
+    string offset = 1;
+    string limit = 2;
+    string search = 3;
+}
+
+message GetAllLocationResponse{
+    int32 count =1;
+    repeated Location locations = 2;
+}
+
+

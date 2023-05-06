@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/notification_service";
+
+message CreateOrder {
+    string title = 2;
+   string description = 3;
+}
+
+message Order {
+    string id = 1;
+    string title = 2;
+   string description = 3;
+   string created_at = 9;
+   string updated_at = 10;
+   string deleted_at = 11;
+}
+
+
+message UpdateOrder{
+    string id = 1;
+    string title = 2;
+   string description = 3;
+}
+
+message OrderPrimaryKey{
+    string id = 1;
+}
+message GetAllOrderRequest{
+    string offset = 1;
+    string limit = 2;
+    string search = 3;
+}
+
+message GetAllOrderResponse{
+    int32 count =1;
+    repeated Order notifications = 2;
+}
+
+

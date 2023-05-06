@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/category_service";
+
+message CreateStadium {
+    string categoryId = 1;
+    string name = 2;
+    double pricePerHour = 3;
+    string description =4;
+    string stadiumType = 5;
+}
+
+message Stadium {
+    string id = 1;
+    string categoryId = 2;
+    string name = 3;
+    double pricePerHour = 4;
+    string description = 5;
+    string stadiumType = 6;
+   string created_at = 3;
+   string updated_at = 4;
+   string deleted_at = 5;
+}
+
+
+message UpdateStadium{
+    string id = 1;
+    string categoryId = 2;
+    string name = 3;
+    double pricePerHour = 4;
+    string description = 5;
+    string stadiumType = 6;
+}
+
+message StadiumPrimaryKey{
+    string id = 1;
+}
+message GetAllStadiumRequest{
+    string offset = 1;
+    string limit = 2;
+    string search = 3;
+}
+
+message GetAllStadiumResponse{
+    int32 count =1;
+    repeated Stadium staduims = 2;
+}
+
+

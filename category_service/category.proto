@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/category_service";
+
+message CreateCategory {
+    string name = 1;
+}
+
+message Category {
+    string id = 1;
+    string name = 2;
+   string created_at = 3;
+   string updated_at = 4;
+   string deleted_at = 5;
+}
+
+
+message UpdateCategory{
+    string id = 1;
+    string name = 2;
+}
+
+message CategoryPrimaryKey{
+    string id = 1;
+}
+message GetAllCategoryRequest{
+    string offset = 1;
+    string limit = 2;
+    string search = 3;
+}
+
+message GetAllCategoryResponse{
+    int32 count =1;
+    repeated Category categoryies = 2;
+}
+
+

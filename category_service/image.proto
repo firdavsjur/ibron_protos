@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/category_service";
+
+message CreateImage {
+    string stadiumId = 1;
+    string imageName = 2;
+}
+
+message Image {
+    string id = 1;
+    string stadiumId = 2;
+    string imageName = 3;
+   string created_at = 4;
+   string updated_at = 5;
+   string deleted_at = 6;
+}
+
+
+message UpdateImage{
+    string id = 1;
+    string stadiumId = 2;
+    string imageName = 3;
+}
+
+message ImagePrimaryKey{
+    string id = 1;
+}
+message GetAllImageRequest{
+    string offset = 1;
+    string limit = 2;
+    string search = 3;
+}
+
+message GetAllImageResponse{
+    int32 count =1;
+    repeated Image images = 2;
+}
+
+
