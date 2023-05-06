@@ -20,8 +20,8 @@ message UserNotificationPrimaryKey{
     string id = 1;
 }
 message GetAllUserNotificationRequest{
-    string offset = 1;
-    string limit = 2;
+    uint64 offset = 1;
+    uint64 limit = 2;
     string search = 3;
 }
 
