@@ -8,7 +8,7 @@ import "send_notification.proto";
 import "google/protobuf/empty.proto";
 
 service SendNotificationService {
-    rpc SendToOne(SendNotificationToOne) returns (google.proto.Empty) {}
+    rpc SendToOne(SendNotificationToOne) returns (google.protobuf.Empty) {}
     rpc SendToAll(SendNotificationToAll) returns (google.protobuf.Empty) {}
     
 }
