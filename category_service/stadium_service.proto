@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 service StadiumService {
     rpc Create(CreateStadium) returns (StadiumPrimaryKey) {}
     rpc GetAll(GetAllStadiumRequest) returns (GetAllStadiumResponse) {}
-    rpc Get(StadiumPrimaryKey) returns (Stadium) {}
+    rpc GetByPKey(StadiumPrimaryKey) returns (Stadium) {}
     rpc Update(UpdateStadium) returns (google.protobuf.Empty) {}
     rpc Delete(StadiumPrimaryKey) returns (google.protobuf.Empty) {}
     

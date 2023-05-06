@@ -7,8 +7,9 @@ message CreateStadium {
     string categoryId = 1;
     string name = 2;
     double pricePerHour = 3;
-    string description =4;
-    string stadiumType = 5;
+    string rate = 4;
+    string description =5;
+    string stadiumType = 6;
 }
 
 message Stadium {
@@ -16,11 +17,12 @@ message Stadium {
     string categoryId = 2;
     string name = 3;
     double pricePerHour = 4;
-    string description = 5;
-    string stadiumType = 6;
-   string created_at = 7;
-   string updated_at = 8;
-   string deleted_at = 9;
+    string rate = 5;
+    string description = 6;
+    string stadiumType = 7;
+   string created_at = 8;
+   string updated_at = 9;
+   string deleted_at = 10;
 }
 
 
@@ -29,8 +31,9 @@ message UpdateStadium{
     string categoryId = 2;
     string name = 3;
     double pricePerHour = 4;
-    string description = 5;
-    string stadiumType = 6;
+    string rate = 5;
+    string description = 6;
+    string stadiumType = 7;
 }
 
 message StadiumPrimaryKey{
