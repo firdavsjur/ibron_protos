@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package genproto;
 
-option go_package="genproto/user_service";
+option go_package="genproto/notification_service";
 
 import "user_notification.proto";
 import "google/protobuf/empty.proto";
