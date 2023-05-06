@@ -18,9 +18,9 @@ message Stadium {
     double pricePerHour = 4;
     string description = 5;
     string stadiumType = 6;
-   string created_at = 3;
-   string updated_at = 4;
-   string deleted_at = 5;
+   string created_at = 7;
+   string updated_at = 8;
+   string deleted_at = 9;
 }
 
 
