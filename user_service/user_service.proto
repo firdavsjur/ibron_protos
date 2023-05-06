@@ -7,7 +7,7 @@ option go_package="genproto/user_service";
 import "user.proto";
 import "google/protobuf/empty.proto";
 
-service ShipperService {
+service UserService {
     rpc Create(CreateUser) returns (UserPrimaryKey) {}
     rpc GetAll(GetAllUserRequest) returns (GetAllUserResponse) {}
     rpc Get(UserPrimaryKey) returns (User) {}

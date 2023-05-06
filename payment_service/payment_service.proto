@@ -7,11 +7,11 @@ option go_package="genproto/payment_service";
 import "payment.proto";
 import "google/protobuf/empty.proto";
 
-service ShipperService {
-    rpc Create(CreateNotification) returns (NotificationPrimaryKey) {}
-    rpc GetAll(GetAllNotificationRequest) returns (GetAllNotificationResponse) {}
-    rpc Get(NotificationPrimaryKey) returns (Notification) {}
-    rpc Update(UpdateNotification) returns (google.protobuf.Empty) {}
-    rpc Delete(NotificationPrimaryKey) returns (google.protobuf.Empty) {}
+service PaymentService {
+    rpc Create(CreatePayment) returns (PaymentPrimaryKey) {}
+    rpc GetAll(GetAllPaymentRequest) returns (GetAllPaymentResponse) {}
+    rpc Get(PaymentPrimaryKey) returns (Payment) {}
+    rpc Update(UpdatePayment) returns (google.protobuf.Empty) {}
+    rpc Delete(PaymentPrimaryKey) returns (google.protobuf.Empty) {}
     
 }

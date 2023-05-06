@@ -7,7 +7,7 @@ option go_package="genproto/user_service";
 import "notification.proto";
 import "google/protobuf/empty.proto";
 
-service ShipperService {
+service NotificationService {
     rpc Create(CreateNotification) returns (NotificationPrimaryKey) {}
     rpc GetAll(GetAllNotificationRequest) returns (GetAllNotificationResponse) {}
     rpc Get(NotificationPrimaryKey) returns (Notification) {}
