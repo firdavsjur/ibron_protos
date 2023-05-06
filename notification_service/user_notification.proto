@@ -23,6 +23,7 @@ message GetAllUserNotificationRequest{
     uint64 offset = 1;
     uint64 limit = 2;
     string search = 3;
+    string userId =4;
 }
 
 message GetAllUserNotificationResponse{
