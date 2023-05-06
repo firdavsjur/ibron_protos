@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 service UserNotificationService {
     rpc Create(CreateUserNotification) returns (UserNotificationPrimaryKey) {}
     rpc GetAll(GetAllUserNotificationRequest) returns (GetAllUserNotificationResponse) {}
-    rpc Get(UserNotificationPrimaryKey) returns (UserNotification) {}
+    rpc GetByPKey(UserNotificationPrimaryKey) returns (UserNotification) {}
     rpc Delete(UserNotificationPrimaryKey) returns (google.protobuf.Empty) {}
     
 }

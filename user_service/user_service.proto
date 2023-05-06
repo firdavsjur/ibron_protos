@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 service UserService {
     rpc Create(CreateUser) returns (UserPrimaryKey) {}
     rpc GetAll(GetAllUserRequest) returns (GetAllUserResponse) {}
-    rpc Get(UserPrimaryKey) returns (User) {}
+    rpc GetByPKey(UserPrimaryKey) returns (User) {}
     rpc Update(UpdateUser) returns (google.protobuf.Empty) {}
     rpc Delete(UserPrimaryKey) returns (google.protobuf.Empty) {}
     

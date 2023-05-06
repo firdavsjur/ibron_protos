@@ -10,7 +10,7 @@ import "google/protobuf/empty.proto";
 service PaymentService {
     rpc Create(CreatePayment) returns (PaymentPrimaryKey) {}
     rpc GetAll(GetAllPaymentRequest) returns (GetAllPaymentResponse) {}
-    rpc Get(PaymentPrimaryKey) returns (Payment) {}
+    rpc GetByPKey(PaymentPrimaryKey) returns (Payment) {}
     rpc Delete(PaymentPrimaryKey) returns (google.protobuf.Empty) {}
     
 }
