@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package genproto;
+
+option go_package="genproto/notification_service";
+
+import "send_notification.proto";
+import "google/protobuf/empty.proto";
+
+service SendNotificationService {
+    rpc SendToOne(SendToOne) returns (google.proto.Empty) {}
+    rpc SendToAll(SendToAll) returns (google.protobuf.Empty) {}
+    
+}

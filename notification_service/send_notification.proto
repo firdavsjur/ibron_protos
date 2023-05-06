@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/notification_service";
+
+message SendNotificationToOne {
+    string notification_id = 1;
+    string user_id = 2;
+}
+
+message SendNotificationToAll {
+    string notification_id = 1;
+}
+
