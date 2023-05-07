@@ -1,6 +1,8 @@
 syntax = "proto3";
 
 package genproto;
+import "category.proto";
+import "location.proto";
 option go_package="genproto/category_service";
 
 message CreateStadium {
@@ -14,15 +16,16 @@ message CreateStadium {
 
 message Stadium {
     string id = 1;
-    string categoryId = 2;
+    Category categoryData = 2;
     string name = 3;
     double pricePerHour = 4;
     string rate = 5;
     string description = 6;
     string stadiumType = 7;
-   string created_at = 8;
-   string updated_at = 9;
-   string deleted_at = 10;
+    Location locationData = 8;
+   string created_at = 9;
+   string updated_at = 10;
+   string deleted_at = 11;
 }
 
 
