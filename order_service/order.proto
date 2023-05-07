@@ -9,6 +9,7 @@ message CreateOrder {
     string stadium_id = 2;
     string payment_id = 3;
     string time = 4;
+    string status = 5;
 }
 
 message Order {
@@ -22,6 +23,7 @@ message Order {
     string updated_at = 8;
     string deleted_at = 9;
 }
+
 
 
 
