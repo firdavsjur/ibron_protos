@@ -15,22 +15,22 @@ message CreateStadium {
 
 message Stadium {
     string id = 1;
-    Category categoryData = 2;
+    Category1 categoryData = 2;
     string name = 3;
     double pricePerHour = 4;
     string rate = 5;
     string description = 6;
     string stadiumType = 7;
-    Location locationData = 8;
+    Location1 locationData = 8;
    string created_at = 9;
    string updated_at = 10;
    string deleted_at = 11;
 }
-message Category{
+message Category1{
     string id = 1;
     string name = 2;
 }
-message Location{
+message Location1{
     string lat = 1;
     string long = 2;
 }
