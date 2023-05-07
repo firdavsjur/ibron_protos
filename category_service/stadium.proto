@@ -22,11 +22,16 @@ message Stadium {
     string description = 6;
     string stadiumType = 7;
     Location1 locationData = 8;
-   string created_at = 9;
-   string updated_at = 10;
-   string deleted_at = 11;
+    repeated Images images = 9;
+   string created_at = 10;
+   string updated_at = 11;
+   string deleted_at = 12;
 }
 message Category1{
+    string id = 1;
+    string name = 2;
+}
+message Images{
     string id = 1;
     string name = 2;
 }
