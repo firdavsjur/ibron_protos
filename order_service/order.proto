@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package genproto;
+option go_package="genproto/order_service";
+
+
+message CreateOrder {
+    string user_id = 1;
+    string stadium_id = 2;
+    string payment_id = 3;
+    string time = 4;
+}
+
+message Order {
+    string id = 1;
+    string user_id = 2;
+    string stadium_id = 3;
+    string payment_id = 4;
+    string time = 5;
+    string status = 6;
+    string created_at = 7;
+    string updated_at = 8;
+    string deleted_at = 9;
+}
+
+
+
+message OrderPrimaryKey{
+    string id = 1;
+}
+message GetAllOrderRequest{
+    uint64 offset = 1;
+    uint64 limit = 2;
+    string search = 3;
+}
+
+message GetAllOrderResponse{
+    int32 count =1;
+    repeated Order orders = 2;
+}
+
+
