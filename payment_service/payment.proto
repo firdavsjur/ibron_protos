@@ -6,7 +6,7 @@ option go_package="genproto/payment_service";
 
 message CreatePayment {
     string user_id = 1;
-    string stadium_id = 2;
+    string order_id = 2;
     string amount = 3;
     string description = 4;
     string pay_type = 5;
@@ -15,7 +15,7 @@ message CreatePayment {
 message Payment {
     string id = 1;
     string user_id = 2;
-    string stadium_id = 3;
+    string order_id = 3;
     string amount = 4;
     string description = 5;
     string pay_type = 6;
