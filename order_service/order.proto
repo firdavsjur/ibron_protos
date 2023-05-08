@@ -37,6 +37,10 @@ message StadiumOrders{
     string toTime = 3;
 }
 
+message GetAllStadiumResponseResponse{
+    int32 count =1;
+    repeated StadiumOrders orders = 2;
+}
 
 message OrderPrimaryKey{
     string id = 1;

@@ -12,7 +12,7 @@ service OrderService {
     rpc Create(CreateOrder) returns (OrderPrimaryKey) {}
     rpc GetAll(GetAllOrderRequest) returns (GetAllOrderResponse) {}
     rpc GetByPKey(OrderPrimaryKey) returns (Order) {}
-    rpc GetStadiumOrders(Stadium1PrimaryKey) returns (StadiumOrders) {}
+    rpc GetStadiumOrders(Stadium1PrimaryKey) returns (GetAllStadiumResponseResponse) {}
     rpc Update(UpdateOrderStatus)returns(google.protobuf.Empty) {}
     rpc Delete(OrderPrimaryKey) returns (google.protobuf.Empty) {} 
 }
