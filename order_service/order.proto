@@ -8,8 +8,9 @@ message CreateOrder {
     string user_id = 1;
     string stadium_id = 2;
     string payment_id = 3;
-    string time = 4;
-    string status = 5;
+    string fromTime = 4;
+    string toTime = 5;
+    string status = 6;
 }
 
 message Order {
