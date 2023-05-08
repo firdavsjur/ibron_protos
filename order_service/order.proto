@@ -29,6 +29,7 @@ message Order {
 message UpdateOrderStatus{
     string id = 1;
     string status = 2;
+    string paymentId = 3;
 }
 
 
