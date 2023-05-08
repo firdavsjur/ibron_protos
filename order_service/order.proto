@@ -26,7 +26,10 @@ message Order {
     string deleted_at = 10;
 }
 
-
+message UpdateOrderStatus{
+    string id = 1;
+    string status = 2;
+}
 
 
 message OrderPrimaryKey{
