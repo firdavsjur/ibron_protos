@@ -31,6 +31,11 @@ message UpdateOrderStatus{
     string status = 2;
     string paymentId = 3;
 }
+message StadiumOrders{
+    string stadium_id = 1;
+    string fromTime =2;
+    string toTime = 3;
+}
 
 
 message OrderPrimaryKey{
