@@ -11,7 +11,7 @@ service UserService {
     rpc Create(CreateUser) returns (UserPrimaryKey) {}
     rpc GetAll(GetAllUserRequest) returns (GetAllUserResponse) {}
     rpc GetByPKey(UserPrimaryKey) returns (User) {}
-    rpc GetUserPaymentHistory(UserPrimaryKey)returns(GetAllPaymentResponse){}
+    rpc GetUserPaymentHistory(UserPrimaryKey)returns(GetAllPaymentResponse1){}
     rpc Update(UpdateUser) returns (google.protobuf.Empty) {}
     rpc Delete(UserPrimaryKey) returns (google.protobuf.Empty) {}
     
