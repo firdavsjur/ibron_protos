@@ -82,5 +82,5 @@ message Order1 {
 }
 message GetAllOrderResponse1{
     int32 count =1;
-    repeated Order orders = 2;
+    repeated Order1 orders = 2;
 }
