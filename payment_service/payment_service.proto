@@ -11,6 +11,7 @@ service PaymentService {
     rpc Create(CreatePayment) returns (PaymentPrimaryKey) {}
     rpc GetAll(GetAllPaymentRequest) returns (GetAllPaymentResponse) {}
     rpc GetByPKey(PaymentPrimaryKey) returns (Payment) {}
+    rpc Update(UpdateOrderStatus)returns(googel.protobuf.Empty){}
     rpc Delete(PaymentPrimaryKey) returns (google.protobuf.Empty) {}
     
 }
