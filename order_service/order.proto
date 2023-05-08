@@ -32,7 +32,7 @@ message UpdateOrderStatus{
     string paymentId = 3;
 }
 message StadiumOrders{
-    string stadium_id = 1;
+    string order_id = 1;
     string fromTime =2;
     string toTime = 3;
 }
