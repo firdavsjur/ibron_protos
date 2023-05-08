@@ -53,7 +53,7 @@ message GetAllUserResponse{
 }
 
 
-message Payment {
+message Payment1 {
     string id = 1;
     string user_id = 2;
     string order_id = 3;
@@ -66,5 +66,5 @@ message Payment {
 }
 message GetAllPaymentResponse1{
     int32 count =1;
-    repeated Payment payments = 2;
+    repeated Payment1 payments = 2;
 }
