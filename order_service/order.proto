@@ -17,11 +17,12 @@ message Order {
     string user_id = 2;
     string stadium_id = 3;
     string payment_id = 4;
-    string time = 5;
-    string status = 6;
-    string created_at = 7;
-    string updated_at = 8;
-    string deleted_at = 9;
+    string fromTime = 5;
+    string toTime = 6;
+    string status = 7;
+    string created_at = 8;
+    string updated_at = 9;
+    string deleted_at = 10;
 }
 
 
