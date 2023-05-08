@@ -11,5 +11,6 @@ service OrderService {
     rpc Create(CreateOrder) returns (OrderPrimaryKey) {}
     rpc GetAll(GetAllOrderRequest) returns (GetAllOrderResponse) {}
     rpc GetByPKey(OrderPrimaryKey) returns (Order) {}
+    rpc Update(UpdateOrderStatus)returns(googel.protobuf.Empty){}
     rpc Delete(OrderPrimaryKey) returns (google.protobuf.Empty) {} 
 }
